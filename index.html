@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Build your own car</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Kristi%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic" />
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container " id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <div class="w3-center w3-xlarge w3-wide w3-animate-opacity">
+                <h1 class="header-welcome">Welcome To</h1>
+            </div>
+            <div class="w3-center w3-xlarge w3-wide w3-animate-opacity">
+                <h1 class="header-logo">ATMAN</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center quote" style="width:50%;margin:0 auto">UNTIL I DISCOVERED THIS WEBSITE I WAS NEVER REALLY
+            INTERESTED IN
+            ANYTHING</h3>
+        <p class="w3-center" style="font-weight: 800">OUR FOUNDER JAY AN</p>
+        <h1 class="w3-center signature">JAY AN</h1>
+
+        <div class="w3-row" >
+            <div class="m6 w3-center w3-padding-large" id="map" style="height: 400px;width:100%">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container">
+        <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+            <div class="w3-center w3-xlarge w3-wide w3-animate-opacity">
+                <h1 class="header-welcome">Build</h1>
+            </div>
+            <div class="w3-center w3-xlarge w3-wide w3-animate-opacity">
+                <h1 class="header-logo">YOUR CAR</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Container (Portfolio Section) -->
+    <div class=" w3-container" id="portfolio">
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img id="porsche" src="./images/porscheLogo.png" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="porscheLogo">
+            </div>
+
+            <div class="w3-col m3">
+                <img id="lamborghini" src="./images/Lamborghini.jpg" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="lamborghiniLogo">
+            </div>
+
+            <div class="w3-col m3">
+                <img id="benz" src="./images/benz.png" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="benzLogo">
+            </div>
+
+            <div class="w3-col m3">
+                <img id="bentley" src="./images/bentley.png" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="bentleyLogo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div class="w3-row-padding">
+            <div class="w3-col m3">
+                <div>
+                    <img src="./images/favicon.jpg" width="101" height="34" class="w3-image">
+                </div>
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <div class="w3-col m3">
+                <li id="text-10" class="widget widget_text" style="list-style: none;text-align: left">
+                    <h2 class="widgettitle">Contact Info</h2>
+                    <div class="textwidget">
+                        <p><i class="fa fa-map-marker marginright"></i> Kitsilano Secondary School</p>
+                        <p><i class="fa fa-phone marginright"></i><a href="tel:+65.4566743"> 236-885-2704</a></p>
+                        <p><i class="fa fa-envelope marginright"></i><a href="mupin0708@gamil.com">
+                                mupin0708@gmail.com</a></p>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="w3-row-padding">
+            <p>Powered by © Build your own car by Jay An</p>
+            <a href="#home" id="toTop" class="w3-button"><i class="fa fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script src = "js/index.js"></script>
+    <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkzqiytoe8xRZRfz2832Nd0_2SVpBIZCo&callback=initMap&v=weekly"
+    defer
+    ></script> -->
+    <!-- <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script> -->
+
+</html>
